@@ -3,6 +3,7 @@ import Notification from 'components/Notification/Notification';
 import Section from 'components/Section/Section';
 import Statistics from 'components/Statistics/Statistics';
 import React, { Component } from 'react';
+import s from './App.module.css';
 
 class App extends Component {
    state = {
@@ -34,7 +35,7 @@ class App extends Component {
    render() {
       const { good, neutral, bad, total } = this.state;
       return (
-         <div>
+         <div className={s.main}>
             <Section title="Please leave feedback">
                <FeedbackOptions
                   options={['Good', 'Neutral', 'Bad']}
