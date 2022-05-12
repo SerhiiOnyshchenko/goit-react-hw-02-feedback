@@ -1,14 +1,17 @@
 import s from './FeedbackOptions.module.css';
-import shortid from 'shortid';
 import PropTypes from 'prop-types';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
    return (
-      <div className={s.container} onClick={onLeaveFeedback}>
+      <div className={s.container}>
          {options.map(name => {
             return (
-               <div className={s.btn} key={shortid.generate()}>
-                  <button type="button" name={name.toLowerCase()}>
+               <div className={s.btn} key={name}>
+                  <button
+                     onClick={() => onLeaveFeedback(name.toLowerCase())}
+                     type="button"
+                     name={name.toLowerCase()}
+                  >
                      {name}
                   </button>
                </div>

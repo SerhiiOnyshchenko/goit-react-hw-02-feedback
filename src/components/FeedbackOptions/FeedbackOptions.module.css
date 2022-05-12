@@ -104,8 +104,8 @@
 	border-radius: 30px;
 	transition-delay: 0.5s;
 }
-.btn:nth-child(1):after,
-.btn:nth-child(1)::before {
+.btn:nth-child(3):after,
+.btn:nth-child(3)::before {
 	background: #ff1f71;
 	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71, 0 0 60px #ff1f71;
 }
@@ -114,8 +114,8 @@
 	background: #2bd2ff;
 	box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff, 0 0 60px #2bd2ff;
 }
-.btn:nth-child(3):after,
-.btn:nth-child(3)::before {
+.btn:nth-child(1):after,
+.btn:nth-child(1)::before {
 	background: #1eff45;
 	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45, 0 0 60px #1eff45;
 }
