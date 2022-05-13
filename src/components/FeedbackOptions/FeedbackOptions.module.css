@@ -43,6 +43,7 @@
 	z-index: 1;
 	font-weight: 400;
 	letter-spacing: 1px;
+	text-transform:capitalize;
 	overflow: hidden;
 	transition: 0.5s;
 	backdrop-filter: blur(15px);

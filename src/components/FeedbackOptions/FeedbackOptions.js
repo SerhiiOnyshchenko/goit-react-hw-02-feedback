@@ -8,9 +8,9 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
             return (
                <div className={s.btn} key={name}>
                   <button
-                     onClick={() => onLeaveFeedback(name.toLowerCase())}
+                     onClick={() => onLeaveFeedback(name)}
                      type="button"
-                     name={name.toLowerCase()}
+                     name={name}
                   >
                      {name}
                   </button>
